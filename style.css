@@ -13,4 +13,13 @@ body {
   width: 300px;
   padding: 10px;
   margin-bottom: 20px;
+
+#controls {
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 8px;
+  margin: 5px;
+}
 }
