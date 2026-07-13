@@ -1,12 +1,9 @@
 const container = document.getElementById("network");
 
 
-let savedPeople =
-  JSON.parse(localStorage.getItem("people")) || people;
+let savedPeople = [];
 
-let savedRelationships =
-  JSON.parse(localStorage.getItem("relationships")) || relationships;
-
+let savedRelationships = [];
 
 const nodes = new vis.DataSet(savedPeople);
 
