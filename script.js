@@ -110,20 +110,3 @@ function findOrCreatePerson(name){
 
   return newPerson.id;
 }
-
-
-
-function saveData(){
-
-  localStorage.setItem(
-    "people",
-    JSON.stringify(savedPeople)
-  );
-
-  localStorage.setItem(
-    "relationships",
-    JSON.stringify(
-      edges.get()
-    )
-  );
-}
