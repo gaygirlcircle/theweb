@@ -236,7 +236,15 @@ function clearMap(){
 
 }
 
+network.on("doubleClick", function(params){
 
+    if(params.nodes.length){
+
+        deleteNode(params.nodes[0]);
+
+    }
+
+});
 
 // save image
 
