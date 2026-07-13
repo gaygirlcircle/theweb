@@ -110,3 +110,21 @@ function findOrCreatePerson(name){
 
   return newPerson.id;
 }
+
+function downloadImage(){
+
+  htmlToImage
+    .toPng(document.getElementById("network"))
+    .then(function(dataUrl){
+
+      const link = document.createElement("a");
+
+      link.download = "relationship-map.png";
+
+      link.href = dataUrl;
+
+      link.click();
+
+    });
+
+}
